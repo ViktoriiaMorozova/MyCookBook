@@ -1,0 +1,89 @@
+#recipe_picture {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image3.webp");
+    opacity: 0.5;
+}
+
+#recipe_picture2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image3.webp");
+    opacity: 0.5;
+}
+
+#recipe_picture3 {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image3.webp");
+    opacity: 0.5;
+}
+
+#recipe_picture4 {
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/image3.webp");
+    opacity: 0.5;
+}
+h2 {
+    font-size: large;
+}
+ #container {
+     display: flex;
+     flex-wrap: nowrap;
+    background-color: rgb(254, 248, 248);
+ }
+ 
+ h3 {
+    color: rgb(212, 20, 20);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: oblique;
+    text-align: center;
+ }
+
+ #box1 {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    line-height: 15px;
+ }
+
+#box2 {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    line-height: 15px;
+} */
+
+#buttons {
+    border: solid;
+    border-radius: 4px;
+    width: 30%;
+    border-color: rgb(122, 106, 94);
+}
+
+p {
+    color: rgb(212, 20, 20);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: oblique;
+    text-align: center;
+}
+
+#container_add p {
+    color: rgb(212, 20, 20);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: oblique;
+    text-align: left;
+}
+
