@@ -1,5 +1,20 @@
 var express = require('express');
+let fs = require('fs');
+
 var router = express.Router();
+
+let readFile = function(fileName) {
+  if (fs.existsSync(fileName)) {
+    let rawData = fs.readFileSync(fileName);
+    return JSON.parse(rawData);
+  }
+  return [];
+}
+
+let saveToFile = function(fileName, newData) {
+  let strData = JSON.stringify(newData);
+  fs.writeFileSync(fileName, strData);
+}
 
 let serverArray = [];
 
@@ -24,13 +39,15 @@ serverArray.push(new foodRecipe("Soup", "Potato", "Carrot", "Onion", "Meatballs"
 router.get('/', function(req, res, next) {
   res.sendFile('index.html');
 });
-
 router.get('/getAllRecipes', function(req, res) {
+  serverArray = readFile('myRecipes.json');
   res.status(200).json(serverArray);
+
 });
 
 router.post('/addRecipe', function(req, res) {
   serverArray.push(req.body);
+  saveToFile('myRecipes.json', serverArray);
   res.status(200).json(req.body);
 });
 
